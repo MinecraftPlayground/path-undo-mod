@@ -38,6 +38,7 @@ public class PathUndo implements ModInitializer {
 
                 player.getItemInHand(hand).hurtAndBreak(1, player, hand);
 
+                player.swing(hand, true);
                 return InteractionResult.CONSUME;
             }
 
